@@ -17,14 +17,7 @@
   height: 36px;
   padding: 10px;
 }
-h3{
-  background-color: #fbf1bd00;
-}
-.generator_password{
-  position: relative;
-  padding: 10px;
-  background-color: #fddc7a;
-}
+
 .Container{
   padding: 1rem;
   margin: 5rem;
