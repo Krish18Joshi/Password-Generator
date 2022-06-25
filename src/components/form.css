@@ -1,0 +1,29 @@
+.form-group{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-between;
+    padding-bottom:1rem ;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: rgba(0, 255, 255, 0);
+    margin: 0px;
+    
+}
+.for{
+   
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #FFE69A;
+}
+.generator-b{
+    width: 100%;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
