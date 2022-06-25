@@ -6,17 +6,6 @@
   background-color: #FFFFFF;
 
 }
-.b1{
-  position: absolute;
-  top: 3px;
-  right: 5px;
-  background-color: #FF8D29;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
-  height: 36px;
-  padding: 10px;
-}
 
 .Container{
   padding: 1rem;

@@ -9,6 +9,19 @@
   
     
 }
+
+.b1{
+    position: absolute;
+    top: 3px;
+    cursor: pointer;
+    right: 5px;
+    background-color: #FF8D29;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    padding: 10px;
+  }
 h3{
     background-color: #fbf1bd00;
   }
@@ -20,6 +33,9 @@ h3{
     padding-bottom: 0.6rem;
     margin-bottom: 1rem;
     background-color: #fddc7a;
+  }
+  input{
+    cursor: pointer;
   }
 .for{
     padding: 1rem;
