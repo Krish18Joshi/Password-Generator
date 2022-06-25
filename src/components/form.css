@@ -58,3 +58,8 @@ label{
     font-weight: 700;
     cursor: pointer;
 }
+
+.generator-b:hover{
+  border: 5px solid rgb(255, 221, 0);
+  border-radius: 10px;
+}

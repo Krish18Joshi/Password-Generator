@@ -46,11 +46,22 @@ password  = password + charlist.charAt(charIndex);
         }
         return password;
     }
+    const copyToClipboard  = ()=>{
+        const newTextarea = document.createElement('textarea')
+        newTextarea.innerText = password ;
+        document.body.appendChild(newTextarea)
+        newTextarea.select()
+        document.execCommand('copy')
+        newTextarea.readOnly()
+    }
+    const copy = (e)=>{
+        copyToClipboard();
+    }
     return(
     <div className='for'>
     <div className = "generator_password">
 <h3>{password}</h3>
-<button className='b1'><i className='far fa-clipboard'></i></button>
+<button onClick={copy} className='b1'><i className='far fa-clipboard'></i></button>
       </div>
     <div className='form-group'>
     <label htmlFor='password-strength'>

@@ -6,8 +6,12 @@
   background-color: #FFFFFF;
 
 }
-
+textarea{
+  width: 0px;
+  height: 0px;
+}
 .Container{
+  
   padding: 1rem;
   margin: 5rem;
   background-color: #fbf1bd;
