@@ -1,28 +1,51 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './form.css';
+import {
+    number,
+    upperCaseLetters,
+    lowerCaseLetters,
+    specialCharacters,
+  } from './char'
 
 
-
-function myFunction() {
-    /* Get the text field */
-    var copyText = document.getElementById("myInput");
-  
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  
-     /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
-  }
 
 function Form(){
+    
     const [password , setPassword ] =useState('');
-  const [passwordLength , setPasswordLength ] =useState(20);
+  const [passwordLength , setPasswordLength ] =useState(10);
   const [uppercase , setUppercase ] =useState(false);
   const [lowercase , setLowercase] =useState(false);
   const [numbers , setNumbers] =useState(false);
   const [symbols , setSymbols] =useState(false);
 
+  const generatepassword = (e) =>{
+    let charlist = '';
+    if(lowercase){
+        charlist = charlist + lowerCaseLetters;
+    }
+    if(uppercase){
+        charlist = charlist + upperCaseLetters;
+    }
+    if(numbers){
+        charlist = charlist + number;
+    }if(symbols){
+        charlist = charlist + specialCharacters;
+    }
+    setPassword(createPassword(charlist));
+
+    }
+    const createPassword = (charlist) =>{
+        let password=''
+        const charlistlength = charlist.length
+
+        for(let i =0 ; i< passwordLength;i++){
+const charIndex = Math.round( Math.random()*charlistlength)
+password  = password + charlist.charAt(charIndex);
+
+        }
+        return password;
+    }
     return(
     <div className='for'>
     <div className = "generator_password">
@@ -84,7 +107,8 @@ Include Symbols
     }}
      type="checkbox" id='symbols' name='symbols'  ></input>
      </div>
-     <button className='generator-b'> Generate - Password</button>
+     <button className='generator-b'
+     onClick={generatepassword}> Generate - Password</button>
      </div>);
 }
 
