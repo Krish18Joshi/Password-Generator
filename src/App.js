@@ -9,9 +9,8 @@ function App() {
       <h2 className='h2'>Password Generator</h2>
       <div className = "generator_password">
 <h3>Password</h3>
-<button className='b1'></button>
+<button className='b1'><i className='far fa-clipboard'></i></button>
       </div>
-
      </div>
 </div>
 
