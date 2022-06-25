@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './form.css';
-import { toast, ToastContainer } from 'react-toastify'
-import { COPY_SUCCESS } from './message.js'
-import 'react-toastify/dist/ReactToastify.css'
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { COPY_SUCCESS }  from './me.js'
+
 import {
     number,
     upperCaseLetters,
@@ -15,7 +17,7 @@ import {
 
 function Form(){
     
-    const [password , setPassword ] =useState('');
+  const [password , setPassword ] =useState('');
   const [passwordLength , setPasswordLength ] =useState(10);
   const [uppercase , setUppercase ] =useState(false);
   const [lowercase , setLowercase] =useState(false);
@@ -57,17 +59,20 @@ password  = password + charlist.charAt(charIndex);
         document.execCommand('copy')
         newTextarea.readOnly()
     }
-    const copy = (e)=>{
+    const handlecopy = (e)=>{
+        notify(COPY_SUCCESS);
         copyToClipboard();
-        notify(COPY_SUCCESS)
+        
+     
     }
     const notify = (message)=>{
         toast.success(message, {
-            position: "top-center",
-            autoClose: 5000,
+            position:"bottom-center",
+
+            autoClose: 4000,
             hideProgressBar: false,
             closeOnClick: true,
-            pauseOnHover: true,
+            pauseOnHover: false,
             draggable: true,
             progress: undefined,
             });
@@ -76,7 +81,7 @@ password  = password + charlist.charAt(charIndex);
     <div className='for'>
     <div className = "generator_password">
 <h3>{password}</h3>
-<button onClick={copy} className='b1'><i className='far fa-clipboard'></i></button>
+<button onClick={handlecopy} className='b1'><i className='far fa-clipboard'></i></button>
       </div>
     <div className='form-group'>
     <label htmlFor='password-strength'>
@@ -135,8 +140,8 @@ Include Symbols
      </div>
      <button className='generator-b'
      onClick={generatepassword}> Generate - Password</button>
-     <ToastContainer
-position="top-center"
+ <ToastContainer position="bottom-center"
+
 autoClose={5000}
 hideProgressBar={false}
 newestOnTop={false}
