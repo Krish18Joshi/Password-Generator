@@ -13,6 +13,9 @@ import {
     lowerCaseLetters,
     specialCharacters,
   } from './char'
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
 
 
 
@@ -24,6 +27,8 @@ function Form(){
   const [lowercase , setLowercase] =useState(false);
   const [numbers , setNumbers] =useState(false);
   const [symbols , setSymbols] =useState(false);
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
 
   const generatepassword = (e) =>{
     let charlist = '';
@@ -37,7 +42,9 @@ function Form(){
       }
     if(lowercase){
         charlist = charlist + lowerCaseLetters;
-    }
+    }// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+
     if(uppercase){
         charlist = charlist + upperCaseLetters;
     }
@@ -48,7 +55,9 @@ function Form(){
     }
     setPassword(createPassword(charlist));
 
-    }
+    }// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+
     const createPassword = (charlist) =>{
         let password=''
         const charlistlength = charlist.length
@@ -59,7 +68,9 @@ password  = password + charlist.charAt(charIndex);
 
         }
         return password;
-    }
+    }// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+
     const copyToClipboard  = ()=>{
         const newTextarea = document.createElement('textarea')
         newTextarea.innerText = password ;
@@ -67,13 +78,17 @@ password  = password + charlist.charAt(charIndex);
         newTextarea.select()
         document.execCommand('copy')
         newTextarea.readOnly()
-    }
+    }// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+
     const handlecopy = (e)=>{
         notify(COPY_SUCCESS);
         copyToClipboard();
         
      
-    }
+    }// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+
     const notify = (message)=>{
         toast.success(message, {
             position:"bottom-center",
@@ -85,7 +100,12 @@ password  = password + charlist.charAt(charIndex);
             draggable: true,
             progress: undefined,
             });
-    }
+    }// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+
     return(
     <div className='for'>
     <div className = "generator_password">

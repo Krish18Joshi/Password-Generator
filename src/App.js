@@ -1,7 +1,11 @@
 
 import './App.css';
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+
 import React from 'react';
 import Form from './components/form.js';
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
 
 function App() {
 
@@ -18,5 +22,8 @@ function App() {
     </div>
   );
 }
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
+// Made by krish joshi Gmail : krishjoshi791@gmail.com
 
 export default App;
