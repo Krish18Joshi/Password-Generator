@@ -11,9 +11,9 @@ textarea{
   height: 0px;
 }
 .Container{
-  
+  text-align: center;
   padding: 1rem;
-  margin: 5rem;
+  margin: 10rem;
   background-color: #fbf1bd;
   border-radius: 10px;
   -webkit-box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
@@ -37,4 +37,47 @@ textarea{
   font-weight: 900;
   color: #FFFFFF;
   background-color: #FFCD38 ;
+}
+
+@media screen and (max-width: 800px){
+  .Container{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color:#fbf1bd;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+    -moz-box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+    box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+  }
+}
+
+
+@media screen and (min-width: 800px){
+  .Container{
+    text-align: center;
+    padding: 1rem;
+    margin: 10rem;
+    background-color:#fbf1bd;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+    -moz-box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+    box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .Container{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    background-color:#fbf1bd;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+    -moz-box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+    box-shadow: 4px 3px 223px -17px rgba(28,232,255,1);
+  }
 }

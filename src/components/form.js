@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
+import swal from 'sweetalert';
+
 import './form.css';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -26,6 +27,14 @@ function Form(){
 
   const generatepassword = (e) =>{
     let charlist = '';
+    if (
+        !uppercase &&
+        !lowercase &&
+        !numbers &&
+        !symbols
+      ) {
+        swal('Select atleast one option')
+      }
     if(lowercase){
         charlist = charlist + lowerCaseLetters;
     }
@@ -87,12 +96,13 @@ password  = password + charlist.charAt(charIndex);
     <label htmlFor='password-strength'>
 Password Strength
     </label>
-    <input
+    <input 
+    className='bb'
     defaultValue={passwordLength} 
     onChange = {(e)=>{
         setPasswordLength(e.target.value)
     }}
-    type="number" id='password-sterngth' name='password-sterngth' max={20} min={5} ></input>
+    type="number" id='password-sterngth'  name='password-sterngth' max="20" min="5" />
     </div>
     <div className='form-group'>
     <label htmlFor='uppercase-letters'>
