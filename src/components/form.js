@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './form.css';
+import { toast, ToastContainer } from 'react-toastify'
+import { COPY_SUCCESS } from './message.js'
+import 'react-toastify/dist/ReactToastify.css'
 import {
     number,
     upperCaseLetters,
@@ -56,6 +59,18 @@ password  = password + charlist.charAt(charIndex);
     }
     const copy = (e)=>{
         copyToClipboard();
+        notify(COPY_SUCCESS)
+    }
+    const notify = (message)=>{
+        toast.success(message, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
     }
     return(
     <div className='for'>
@@ -120,6 +135,17 @@ Include Symbols
      </div>
      <button className='generator-b'
      onClick={generatepassword}> Generate - Password</button>
+     <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+/>
      </div>);
 }
 
