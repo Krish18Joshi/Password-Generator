@@ -13,6 +13,7 @@ h3{
     background-color: #fbf1bd00;
   }
   .generator_password{
+    height: 1.5rem;
     position: relative;
     padding-top: 0.6rem;
     text-align: center;
