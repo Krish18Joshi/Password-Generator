@@ -6,7 +6,7 @@ A password generator is a software tool that creates random or customized passwo
 ## Table of contents
 
 - [Image](#IMAGE)
-- [Links](#Links)
+- [Links](#Link)
 - [Built with](#built-with)
 
 
@@ -18,6 +18,6 @@ A password generator is a software tool that creates random or customized passwo
 ## Built with
 => REACT.JS
 
-###Link 
+## Link 
 LIVE URL=>  https://krish18joshi.github.io/Password-Generator/
 
