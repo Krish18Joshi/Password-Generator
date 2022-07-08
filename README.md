@@ -19,5 +19,5 @@ A password generator is a software tool that creates random or customized passwo
 => REACT.JS
 
 ## Link 
-LIVE URL=>  https://krish18joshi.github.io/STOCKZO/
+LIVE URL=>  https://krish18joshi.github.io/Password-Generator/
 
